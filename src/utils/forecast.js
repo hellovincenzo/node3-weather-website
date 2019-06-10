@@ -14,7 +14,9 @@ const forecast = (latitude, longitude, callback) => {
         undefined,
         `${body.daily.data[0].summary} It is currently ${
           data.temperature
-        }. There is ${data.precipProbability}% chance or rain.`
+        } and there is a wind speed of ${data.windSpeed}. There is ${
+          data.precipProbability
+        }% chance or rain.`
       );
     }
   });
